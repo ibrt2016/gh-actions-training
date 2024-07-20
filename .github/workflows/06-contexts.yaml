@@ -7,6 +7,8 @@ on:
       debug:
         type: boolean
         default: false
+env:
+  MY_ENV: "Prod"
 
 jobs:
   echo-data:
@@ -23,3 +25,6 @@ jobs:
           echo "Run number: ${{ github.run_number }}"
       - name: Retrieve Variable
         run: echo "${{ vars.MY_VAR }}"
+      - name: Print Env vars
+        run: |
+          echo "Env is: ${{ env.MY_ENV }}"
