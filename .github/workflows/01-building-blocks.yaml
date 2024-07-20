@@ -5,12 +5,12 @@ on:
 
 jobs:
   echo-hello:
-    runs-om: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
     - name: Say hello
       run: echo "Hello, World!"
   echo-goodbye:
-    runs-om: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
     - name: Failed step
       run: |
